@@ -1,0 +1,16 @@
+Explanation of DesktopNova's Subsystems
+=======================================
+
+ * docs:
+     Notes for developers are located here.
+ * res:
+     All ressources (everything that is not code) are located here.
+ * src:
+     Source code of the DesktopNova.
+ * src/daemon:
+     Source of background daemon.
+ * src/manager:
+     Source of configuration dialog.
+ * src/helpers:
+     Source of helper programs. The helpers are used to actually change the
+     background image.
