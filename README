@@ -7,9 +7,11 @@ Explanation of DesktopNova's Subsystems
      All ressources (everything that is not code) are located here.
  * src:
      Source code of the DesktopNova.
+ * src/common:
+     Common routines used in DesktopNova.
  * src/daemon:
      Source of background daemon.
- * src/manager:
+ * src/gui:
      Source of configuration dialog.
  * src/helpers:
      Source of helper programs. The helpers are used to actually change the

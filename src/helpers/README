@@ -1,0 +1,14 @@
+DesktopNova Helper Tools
+========================
+
+This directory contains all the sources for the helper tools which are shipped
+with DesktopNova. The helpers have exactly one job: They are replacing the
+current desktop background image for their desktop environment or subsystem.
+The user is able to choose which helpers DesktopNova should run, so he has
+a great deal of control over the process.
+
+DesktopNova executes the resulting binaries in the following way:
+  /path/to/binary/helper-foo <filename of new background image>
+
+All helpers need to expect exact one positional argument: The filename of the
+background image. Non-standard interfaces are NOT recommended.

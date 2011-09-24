@@ -1,0 +1,4 @@
+Name: Gnome Shell
+Description: This module enables support for gnome-shell using dconf.
+Author: Eric Gach <eric@php-oop.net>
+Homepage: http://launchpad.net/desktopnova

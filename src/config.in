@@ -1,0 +1,17 @@
+/*
+ * This file is the template file for the `config.h' header.
+ *
+ * CMake will replace the variables by there current values before building
+ * the project.
+ */
+
+#ifndef __config__h__
+#define __config__h__
+
+#define PREFIX           "${CMAKE_INSTALL_PREFIX}"
+#define DIR_BIN          "${DIR_BIN}"
+#define DIR_LIBEXEC      "${DIR_LIBEXEC}"
+#define DIR_HELPER       "${DIR_HELPER}"
+#define DIR_HELPER_REL   "${DIR_HELPER_REL}"
+
+#endif

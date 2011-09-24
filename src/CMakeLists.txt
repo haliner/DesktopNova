@@ -1,0 +1,6 @@
+CONFIGURE_FILE(config.in config.h)
+
+ADD_SUBDIRECTORY(common)
+ADD_SUBDIRECTORY(daemon)
+ADD_SUBDIRECTORY(gui)
+ADD_SUBDIRECTORY(helpers)

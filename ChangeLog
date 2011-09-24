@@ -1,0 +1,164 @@
+2011-03-20  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.8.1
+	* fixed build failure: Link against ld
+	* reorganized intltool integration
+
+
+2010-04-28  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.8
+	* rewrote history code (fixed many bugs)
+	* recognize missing wallpapers and try to set a new one
+	* don't allow a wallpaper to be multiple times in the history
+	* custom file extension filters
+
+2010-03-21  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.7.5
+	* daemon will continue starting if no process with
+	  pid from pidlock is running
+
+2010-03-18  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.7.4
+	* improved daemon's process detection
+	  (now checks cmdline of process with pid from pidlock file)
+
+2010-03-15  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.7.3
+	* minor changes
+
+2010-03-14  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.7.2
+	* enhanced python 2.5 compatibility
+	* enhanced compatibility with older versions of gtk+
+
+2010-03-14  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.7.1
+	* new project name: DesktopNova
+	* using the mouse wheel on the tray-icon will change the wallpaper
+	* display warning if no module was activated
+	* disable tray options if tray isn't installed
+	* documentation updated
+	* improved build process
+
+2009-12-13  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.7
+	* new GUI, use tabs
+	* DesktopNova sorts the profile names alphabetically
+	* spin-button instead of normal edit-box
+	* default button in dialogs
+	* history of wallpapers
+	* tray icon
+	* D-Bus support
+	* Support for GLib's GMainLoop
+	* use cmake instead of autotools for building
+	* added button to remove pid-lock file
+	* rewrote pidfile-check
+	* updated translations: cs de es hu it pl pt pt_BR ru tr zh_CN
+	  Special thanks go to the translators!
+	* GNOME module: updated translations
+	* Xfce module: updated translations
+	* Tray icon: tray icon support added
+
+2009-05-29  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.6.2
+	* fix wrong size of filter-array
+	* Xfce module: backport of Xfce-Xfconf-module (work with Xfce 4.6 or higher)
+
+2009-03-01  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.6.1
+	* Spanish, Italien and Chinese (simplified) Translation
+	* GNOME module: translations
+	* Xfce module: translations
+
+2008-12-20  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.6
+	* translatable modules
+	* use Autotools-distribution
+	* only install *.so files (without static library)
+	* move module-settings to an extra window
+	* remove *.ico from filter
+	* display summary at the end of ./configure
+	* renew README
+	* distribute rpm & deb packages
+	* senseless comments removed
+	* new homepage (in English & German)
+	  https://sites.google.com/site/haliner/desktopnova
+	* build Debian & Red Hat Packages
+	* desktop-file observes standard
+	* GNOME module: make translatable
+	* Xfce module: added Xfce module
+
+
+2008-11-29  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.5
+	* module support
+	* first module for gnome (version 0.1)
+	* man files added
+	* added GNOME module
+
+2008-10-29  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.4.1
+	* changed gtk_dialog_get_content_area to GTK_DIALOG(dialog)->vbox
+
+2008-10-29  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.4
+	* profile support
+
+2008-10-23  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.3.2
+	* disable negative interval
+
+2008-10-02  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.3.1
+	* missing german translation for "subfolders" fixed
+
+2008-09-24  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.3
+	* subfolder setting for each single folder
+
+2008-09-21  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.2.2
+	* SVN repository
+	* use autoconf and automake
+
+2008-09-06  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.2.1
+	* prepare Xfce-Support (not finished yet)
+	* create autorun folder if not exists
+
+2008-08-07  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.2
+	* option 'change wallpaper every launch' works correctly without option 'change wallpaper in interval'
+	* block signals (SIGINT, SIGQUIT, SIGHUP, SIGTERM) after initialising daemon
+	* added svg, gif, ico and tif to filter
+	* debug options (launch program with -dn, where n is a number from 0 to 2)
+
+2008-08-05  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.1.1
+	* save settings before starting daemon
+	* check syntax only when save settings
+
+2008-08-04  Stefan Haller  <haliner@googlemail.com>
+
+	* Version 0.1
+	* first offical release

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=DesktopNova-Tray
+Comment=A Tray-Icon for DesktopNova
+Icon=desktopnova
+Exec=desktopnova-tray
+Categories=GNOME;Application;Utility;

@@ -1,0 +1,6 @@
+Name: Xfce Xfconf
+Description: This module enables Xfce-support with Xfconf. Use this this \
+             module for Xfce 4.6 or newer. If you have an older version of \
+             Xfce, you should use the other Xfce module.
+Author: Stefan Haller <haliner@googlemail.com>
+Homepage: http://launchpad.net/desktopnova
