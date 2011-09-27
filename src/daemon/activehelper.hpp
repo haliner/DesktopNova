@@ -16,4 +16,12 @@
 #ifndef GUARD_DN_DAEMON_ACTIVEHELPER_HPP
 #define GUARD_DN_DAEMON_ACTIVEHELPER_HPP
 
+namespace dn {
+
+class ActiveHelper {
+
+};
+
+} // Namespace
+
 #endif
