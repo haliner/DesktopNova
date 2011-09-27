@@ -49,27 +49,27 @@ Configuration::set_interval(const int value)
 {
 }
 
-Profile
+profile::Profile
 Configuration::get_default_profile() const
 {
-	return Profile();
+	return profile::Profile();
 }
 
 void
-Configuration::set_default_profile(const Profile &prof)
+Configuration::set_default_profile(const profile::Profile &prof)
 {
 }
 
-Profile
+profile::Profile
 Configuration::get_profile(const std::string &name) const
 {
-	return Profile();
+	return profile::Profile();
 }
 
-std::vector<Profile>
+std::vector<profile::Profile>
 Configuration::get_profiles() const
 {
-	return std::vector<Profile>();
+	return std::vector<profile::Profile>();
 }
 
 

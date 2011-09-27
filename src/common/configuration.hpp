@@ -38,11 +38,11 @@ public:
 	int get_interval() const;
 	void set_interval(const int value);
 
-	Profile get_default_profile() const;
-	void set_default_profile(const Profile &prof);
+	profile::Profile get_default_profile() const;
+	void set_default_profile(const profile::Profile &prof);
 
-	Profile get_profile(const std::string &name) const;
-	std::vector<Profile> get_profiles() const;
+	profile::Profile get_profile(const std::string &name) const;
+	std::vector<profile::Profile> get_profiles() const;
 
 
 	//
