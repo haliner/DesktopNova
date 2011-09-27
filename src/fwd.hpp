@@ -24,8 +24,12 @@ namespace dn {
 	class ActiveProfile;  /* daemon */
 	class Configuration;  /* common */
 	class Daemon;         /* daemon */
-	class Profile;        /* common */
 	class Wallpaper;      /* daemon */
+
+	namespace profile {
+		class Directory;
+		class Profile;
+	}
 }
 
 #endif

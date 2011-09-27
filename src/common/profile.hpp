@@ -16,11 +16,54 @@
 #ifndef GUARD_DN_COMMON_PROFILE_HPP
 #define GUARD_DN_COMMON_PROFILE_HPP
 
-namespace dn {
+#include <string>
+#include <vector>
 
-class Profile {
+
+namespace dn {
+namespace profile {
+
+class Directory {
+public:
+	Directory();
+	Directory(std::string &path, const bool subdirectories = true);
+	Directory(const Directory &rhs);
+	Directory(Directory &&rhs);
+
+	Directory& operator=(const Directory &rhs);
+	Directory& operator=(Directory &&rhs);
+
+	const std::string& get_path() const;
+	void set_path(const std::string& value);
+
+	const bool &get_subdirectores() const;
+	void set_subdirectories(const bool value);
+
+private:
+	std::string path;
+	bool subdirectories;
 };
 
-} // Namespace
+class Profile {
+public:
+	Profile() = default;
+	Profile(std::string &name);
+	Profile(const Profile &rhs);
+	Profile(Profile &&rhs);
+
+	Profile& operator=(const Profile &rhs);
+	Profile& operator=(Profile &&rhs);
+
+	void add_directory(const Directory &directory);
+	void add_directory(Directory &&directory);
+
+	void remove_directory(const Directory &directory);
+
+private:
+	std::string name;
+	std::vector<Directory> directories;
+};
+
+}} // Namespaces
 
 #endif
