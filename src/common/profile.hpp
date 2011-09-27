@@ -33,6 +33,8 @@ public:
 	Directory& operator=(const Directory &rhs);
 	Directory& operator=(Directory &&rhs);
 
+	bool operator==(const Directory &rhs);
+
 	const std::string& get_path() const;
 	void set_path(const std::string& value);
 
@@ -53,6 +55,8 @@ public:
 
 	Profile& operator=(const Profile &rhs);
 	Profile& operator=(Profile &&rhs);
+
+	bool operator==(const Profile &rhs);
 
 	void add_directory(const Directory &directory);
 	void add_directory(Directory &&directory);
