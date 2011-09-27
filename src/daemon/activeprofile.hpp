@@ -16,7 +16,7 @@
 #ifndef GUARD_DN_DAEMON_ACTIVEPROFILE_HPP
 #define GUARD_DN_DAEMON_ACTIVEPROFILE_HPP
 
-#include "../common/fwd.hpp"
+#include "../fwd.hpp"
 
 
 namespace dn {

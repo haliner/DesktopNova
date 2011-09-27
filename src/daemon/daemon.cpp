@@ -17,6 +17,7 @@
 
 #include "../common/configuration.hpp"
 #include "../common/profile.hpp"
+#include "activeprofile.hpp"
 
 
 namespace dn {

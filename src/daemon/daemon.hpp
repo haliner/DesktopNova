@@ -47,6 +47,7 @@ public:
 
 private:
 	std::unique_ptr<Configuration> configuration;
+	std::unique_ptr<ActiveProfile> profile;
 };
 
 } // Namespace
