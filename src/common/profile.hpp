@@ -57,7 +57,10 @@ public:
 	void add_directory(const Directory &directory);
 	void add_directory(Directory &&directory);
 
+	void remove_directory(const std::string &path);
 	void remove_directory(const Directory &directory);
+
+	const std::vector<Directory>& get_directories();
 
 private:
 	std::string name;
