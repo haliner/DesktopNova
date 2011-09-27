@@ -9,8 +9,39 @@ Explanation of DesktopNova's Subsystems
      Source code of the DesktopNova.
  * src/daemon:
      Source of background daemon.
+ * src/common:
+     Common source code which is used by other subsystems.
  * src/manager:
      Source of configuration dialog.
  * src/helpers:
      Source of helper programs. The helpers are used to actually change the
      background image.
+
+
+Tools Needed for Building the Project
+=====================================
+
+ * CMake
+ * g++
+ * the Boost C++ library
+
+Please note that this project is conforming to the C++11 standard. So the need
+for a recent C++ compiler arises. That's why g++ 4.7 or above is recommended.
+
+
+Building and Installing
+=======================
+
+The project uses CMake for makefile generation. It's recommended to build the
+project not in the source directory. Use another dir as build directory. If
+you want to adjust settings, pass them to CMake (via `-D' flag) or use ccmake
+for the ncurses terminal program.
+
+Example build:
+
+$ mkdir build
+$ cd build
+$ cmake -DCMAKE_INSTALL_PREFIX=/usr/local ..
+$ make
+$ su
+# make install

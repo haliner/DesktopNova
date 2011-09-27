@@ -1,0 +1,18 @@
+//
+// This file is the template file for the 'config.hpp' header.
+//
+// CMake will replace the variables by there current values before building
+// the project.
+//
+
+#ifndef GUARD_DN_COMMON_CONFIG_HPP
+#define GUARD_DN_COMMON_CONFIG_HPP
+
+#define PREFIX               "${CMAKE_INSTALL_PREFIX}"
+#define DIR_RUNTIME          "${DIR_RUNTIME}"
+#define DIR_ARCHIVE          "${DIR_ARCHIVE}"
+#define DIR_LIBRARY          "${DIR_LIBRARY}"
+#define DIR_RUNTIME_HELPER   "${DIR_RUNTIME_HELPER}"
+#define DIR_HELPER_REL       "${DIR_HELPER_REL}"
+
+#endif
