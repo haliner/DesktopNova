@@ -23,6 +23,11 @@
 namespace dn {
 namespace profile {
 
+//
+// The Directory class represents a directory declaration for a profile.
+// It stores the path to the directory and if the subdirectory should be
+// searches, too.
+//
 class Directory {
 public:
 	Directory() = default;
@@ -46,6 +51,13 @@ private:
 	bool subdirectories_;
 };
 
+
+//
+// The Profile class represents a profile declaration.
+// Each profile has a name and arbitrary associated directory declarations.
+// Feeding an ActiveProfile object with a Profile object, will translate
+// the information of the profile object.
+//
 class Profile {
 public:
 	Profile() = default;
