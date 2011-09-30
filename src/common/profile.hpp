@@ -25,41 +25,40 @@ namespace profile {
 
 class Directory {
 public:
-	Directory();
-	Directory(std::string &path, const bool subdirectories = true);
+	Directory() = default;
+	Directory(std::string path, const bool subdirectories = true);
 	Directory(const Directory &rhs);
 	Directory(Directory &&rhs);
 
 	Directory& operator=(const Directory &rhs);
 	Directory& operator=(Directory &&rhs);
 
-	bool operator==(const Directory &rhs);
+	bool operator==(const Directory &rhs) const;
 
 	const std::string& get_path() const;
-	void set_path(const std::string& value);
+	void set_path(std::string value);
 
 	const bool &get_subdirectores() const;
-	void set_subdirectories(const bool value);
+	void set_subdirectories(bool value);
 
 private:
-	std::string path;
-	bool subdirectories;
+	std::string path_;
+	bool subdirectories_;
 };
 
 class Profile {
 public:
 	Profile() = default;
-	Profile(std::string &name);
+	Profile(std::string name);
 	Profile(const Profile &rhs);
 	Profile(Profile &&rhs);
 
 	Profile& operator=(const Profile &rhs);
 	Profile& operator=(Profile &&rhs);
 
-	bool operator==(const Profile &rhs);
+	bool operator==(const Profile &rhs) const;
 
-	void add_directory(const Directory &directory);
-	void add_directory(Directory &&directory);
+	void add_directory(Directory directory);
 
 	void remove_directory(const std::string &path);
 	void remove_directory(const Directory &directory);
@@ -67,8 +66,8 @@ public:
 	const std::vector<Directory>& get_directories();
 
 private:
-	std::string name;
-	std::vector<Directory> directories;
+	std::string name_;
+	std::vector<Directory> directories_;
 };
 
 }} // Namespaces
